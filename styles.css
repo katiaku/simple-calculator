@@ -1,0 +1,40 @@
+#app {
+    height: 100vh;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    padding: 5px;
+    width: 320px;
+}
+
+#display {
+    text-align: right;
+}
+
+.output {
+    font-size: 1.6rem;
+}
+
+.buttonContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    gap: 5px;
+}
+
+#clear,
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#equals {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
